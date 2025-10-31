@@ -1,0 +1,224 @@
+/* Reset básico para eliminar márgenes por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  /* altura entre lineas de texto */
+  line-height: 1.6;
+  /* color de fondo para toda la pagina*/
+  background-color: #f8f8f8;
+  /* color del texto */
+  color: #333;
+  /* espacio interno, para que el contenido no quede pegado a los bordes*/
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  /* color de fondo del encabezado */
+  background-color: #9f9ebb;
+  /* espacio interno, para que el contenido no quede pegado a los bordes*/
+  padding: 20px;
+  /* bordes redondeados */
+  border-radius: 10px;
+  /* espacio por debajo del encabezado */
+  margin-bottom: 20px;
+}
+
+header h1 {
+  /* espacio debajo del h1 */
+  margin-bottom: 10px;
+  /* color del texto */
+  color: #333;
+  /* grosor del texto */
+  font-weight: bold;
+}
+
+/* enlaces del h1*/
+header h1 a {
+  /* elimina el subrayado de los enlaces */
+  text-decoration: none;
+  /* color del texto de los enlaces */
+  color: inherit;
+  /* grosor del texto */
+  font-weight: inherit;
+}
+
+/* cambia el estilo cuando el cursor está encima */
+header h1 a:hover {
+  /* color al que se cambia */
+  color: #666;
+}
+
+/* barra navegacion unordered list */
+nav ul {
+  /* sin puntos ni numeracion */
+  list-style: none;
+  /* muestra los elementos de la lista <li> en horizontal*/
+  display: flex;
+  /*espacio entre cada elemento de la lista */
+  gap: 30px;
+}
+
+/* barra navegacion enlaces */
+nav a {
+  /* elimina el subrayado de los enlaces */
+  text-decoration: none;
+  /* color del texto de los enlaces */
+  color: inherit;
+  /* grosor del texto */
+  font-weight: bold;
+}
+
+/* cambia el estilo cuando el cursor está encima */
+nav a:hover {
+  /* color al que se cambia */
+  color: #666;
+  /* añade subrayado opcional */
+ /* text-decoration: underline; */
+}
+
+/* Contenido principal */
+main {
+  /* color de fondo de la página */
+  background-color: white;
+  /* espacio interno, para que el contenido no quede pegado a los bordes */
+  padding: 20px;
+  /* bordes redondeados */
+  border-radius: 10px;
+}
+
+/* formato de los enlaces*/
+main a {
+  /* elimina el subrayado de los enlaces */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* cambia el estilo cuando el cursor está encima */
+main a:hover {
+  /* color al que se cambia */
+  color: #666;
+  /* añade subrayado opcional */
+ text-decoration: underline;
+}
+
+/* formato de la lista */
+main ul {
+ /* sin puntos ni numeracion */
+  list-style: none;
+  /*espacio entre cada elemento de la lista */ 
+}
+
+main img {
+  /* espacio por encima de la imagen */
+  margin-top: 10px;
+  /* bordes redondeados */
+  border-radius: 10px;
+}
+
+.lista-ayuda li{
+ margin-top: 2rem;
+}
+
+.lista-ayuda a{
+ font-weight: bold;
+}
+
+.lista-requisitos li{
+  /* marcador delante de los elementos de la lista */
+  list-style-type: none;
+  /* sangria */
+  margin-left: 1.5rem;
+  margin-top: 0;
+}
+
+/*lo que va antes de los elementos de la lista*/
+.lista-requisitos li::before {
+  /* código icono paw */
+  content: "\f1b0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  /* se comporta como inline: en la misma linea que otro elementos*/
+  /* se comporta como block: puedes definir ancho, padding...*/
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #555;
+}
+
+.palabra-resaltada {
+  color: #8887a2;
+  font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+  /* alineacion del texto */
+  text-align: center;
+  /* espacio por encima del footer */
+  margin-top: 30px;
+  /* color del texto del footer */
+  color: #777;
+  /* element, escala conforme el tamaño del elemento padre*/
+  font-size: 0.9em;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* aplica a las clases <section class="ficha-animal"> ... </section> */
+.ficha-animal {
+    border: 5px solid #ccc;
+    /* borde interno entre el contenido y el borde del elemento */
+    /* root element, por defecto 16px, escala conforme el tamaño de la fuente del navegador */
+    padding: 1rem;
+    /* espacio bajo el elemento */
+    margin-bottom: 1rem;
+    /* redondea las esquinas del borde */
+    border-radius: 10px;
+    /* limita el ancho del elemento */
+    /*max-width: 300px;*/
+    /* ancho del elemento */
+    width: 350px;
+  }
+
+  /* contenedor de las fichas de los animales para que se muestren horizontalmente */
+  .contenedor-fichas {
+    display: flex;           /* Activa flexbox */
+    flex-wrap: wrap;         /* Permite que las fichas bajen a otra línea si no caben */
+    gap: 20px;               /* Espacio entre fichas */
+    justify-content: left; /* Centra las fichas horizontalmente */
+  }
+  
+  /* iconos y textos de las redes del footer */
+  .redes-sociales {
+  margin-top: 10px;
+}
+
+/* enlaces de las reces sociales del footer */
+.redes-sociales a {
+  color: #777;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* cambia el estilo cuando el cursor está encima */
+.redes-sociales a:hover {
+  color: #333;
+}
+
+.imagen_index {
+  display: block;
+  /* margen vertical y centrado horizontal */
+  margin: 20px auto; 
+}
